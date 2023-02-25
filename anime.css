@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  background-image: url(./img/backgroundJJTSK.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Header section */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 50px;
+}
+
+header .logo {
+  color: #ffffff;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.one {
+  color: #ed3c57;
+}
+
+span {
+  color: #ffffff;
+}
+
+header .menu {
+  display: flex;
+  align-items: center;
+}
+
+header .menu ul {
+  display: flex;
+}
+
+header .menu ul li {
+  margin: 0 20px;
+}
+
+header ul li a {
+  color: #ffffff;
+  font-size: 25px;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+#act {
+  color: #ed3c57;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+header ul li a:hover {
+  cursor: pointer;
+  border-bottom: 2px solid;
+  border-color: #ed3c57;
+  transition: border-color 0.4s;
+}
+
+header .logo:hover {
+  cursor: pointer;
+  border-bottom: 2px solid;
+  border-color: #ed3c57;
+  transition: border-color 0.4s;
+}
+
+.buy {
+  border: 2px solid #ed3c57;
+  padding: 5px 20px;
+  transition: 0.5s;
+}
+
+.buy:hover {
+  background-color: #ed3c57;
+  color: #fff;
+}
+
+.rinnegan img {
+  width: 50px;
+  display: none;
+}
+
+/* Description section */
+
+.description {
+  height: 600px;
+  padding: 0 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gauche h1 {
+  font-size: 40px;
+}
+
+.gauche p {
+  color: #999999;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.gauche a {
+  border: 2px solid #ed3c57;
+  margin-top: 15px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 15px;
+  padding: 10px 20px;
+  transition: 0.5s;
+  letter-spacing: 1px;
+}
+
+.droite {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38%;
+}
+
+.droite img {
+  height: 400px;
+}
+
+.kaleidoscope {
+  width: 40px;
+  display: none;
+}
+
+/* Responsive*/
+
+@media screen and (max-width: 900px) {
+  body {
+    background-image: url(./img/ichigo.jpg);
+  }
+
+  header {
+    padding: 0;
+  }
+
+  .logo {
+    margin-left: 20px;
+  }
+
+  header .menu {
+    top: 2em;
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    margin-left: -100%;
+    transition: all 0.5s ease;
+  }
+
+  .menu.mobile-menu {
+    margin-left: 0;
+  }
+
+  header .menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  header .menu ul li {
+    margin: 15px 0;
+  }
+
+  header .menu ul li a {
+    color: #ed3c57;
+    font-weight: 600;
+  }
+
+  header .menu ul li .buy {
+    color: #ffffff;
+  }
+
+  #act {
+    color: #ffffff;
+  }
+
+  .kaleidoscope {
+    display: block;
+    margin-right: 20px;
+    box-shadow: 0px 0px 20px red;
+  }
+
+  .gauche {
+    margin-top: 70px;
+    background-color: #000000;
+    width: 100%;
+    padding: 25px;
+    box-shadow: 10px 5px 5px red;
+    font-weight: 700;
+    border-radius: 25px;
+  }
+
+  .gauche h1 {
+    font-size: 27px;
+  }
+
+  .bec {
+    color: #ed3c57;
+  }
+
+  .gauche p {
+    font-size: 18px;
+    color: #ffffff;
+  }
+
+  .droite img {
+    display: none;
+  }
+}
